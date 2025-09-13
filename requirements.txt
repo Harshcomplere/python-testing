@@ -1,0 +1,19 @@
+# Spark and Data Engineering
+pyspark>=3.4.0
+
+# Data Manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Azure SDK
+azure-storage-blob>=12.19.0
+
+# Date parsing
+python-dateutil>=2.8.0
+
+# HTTP Requests
+requests>=2.31.0
+
+# Unit Testing
+pytest>=7.4.0
+pytest-mock>=3.11.0
