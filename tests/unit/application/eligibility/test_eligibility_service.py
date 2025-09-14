@@ -1,6 +1,6 @@
 import pytest
 from unittest import mock
-from domain.logic.data.person import Person
+from src.domain.logic.data.person import Person
 from src.application.eligibility.eligibility_service import EligibilityService
 
 @pytest.fixture
@@ -124,11 +124,13 @@ def test_run_with_no_data_raises_and_notifies(mock_dependencies):
 def test_get_age_with_age_eighteen_should_return_true():
 
     # Arrange
-    expected_age = 18
-    sut = Person("John Doe", expected_age)
+    expected_age = '23'
+    sut = Person("Harsh Bhola", expected_age)
     
     # Act
-    result = sut.get_age()
+    name = sut.get_name()
+    age = sut.get_age()
     
     # Assert
-    assert result is expected_age, f"Expected age {expected_age}, but got {result}"
+    print(name)
+    assert age == expected_age, f"Expected age {expected_age}, but got {age}"
