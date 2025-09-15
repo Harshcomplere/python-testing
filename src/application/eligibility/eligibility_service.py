@@ -4,6 +4,8 @@ from src.infrastructure.blob_uploader import BlobUploader
 from src.domain.logic.data.eligibility_data_generator import DummyEligibilityDataGenerator
 from src.domain.logic.transformers.eligibility_transformer import EligibilityTransformer
 
+print("hello")
+
 class EligibilityService:
     def __init__(self, spark, config):
         self.spark = spark
